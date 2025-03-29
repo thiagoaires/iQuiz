@@ -23,10 +23,3 @@ O objetivo do curso foi proporcionar uma introdução prática à plataforma iOS
 Antes de executar o projeto, certifique-se de que tem os seguintes requisitos instalados:
 - **Xcode**: Baixe e instale a última versão do Xcode na Mac App Store.
 - **macOS**: O desenvolvimento para iOS requer um computador Mac com a versão mais recente do macOS.
-
-## Como rodar o projeto
-
-1. Clone este repositório no seu computador:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-    ```
