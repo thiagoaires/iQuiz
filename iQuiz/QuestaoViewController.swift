@@ -13,10 +13,27 @@ class QuestaoViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        configurarLayout()
+    }
+    
+    func configurarLayout(){
+        navigationItem.hidesBackButton = true;
+        
+        for botao in botoesRespostas{
+            botao.layer.cornerRadius = 12.0
+        }
+    }
+    
+    @IBOutlet var botoesRespostas: [UIButton]!
+    
+    @IBOutlet weak var tituloQuestaoLabel: UILabel!
+    
+    
+    @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
+        print(sender.tag)
     }
     
     
-
     /*
     // MARK: - Navigation
 
