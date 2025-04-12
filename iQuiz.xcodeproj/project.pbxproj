@@ -45,8 +45,8 @@
 		AF5EA1452D9896070062EE15 = {
 			isa = PBXGroup;
 			children = (
-				AF5EA1502D9896070062EE15 /* iQuiz */,
 				AF5EA14F2D9896070062EE15 /* Products */,
+				AF5EA1502D9896070062EE15 /* iQuiz */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +68,7 @@
 				AF5EA14A2D9896070062EE15 /* Sources */,
 				AF5EA14B2D9896070062EE15 /* Frameworks */,
 				AF5EA14C2D9896070062EE15 /* Resources */,
+				AF3D055D2DAAE910001D15F1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,6 +127,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF3D055D2DAAE910001D15F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat \"${SRCROOT}\"\nelse\n  echo \"warning: SwiftFormat not installed. Install with 'brew install swiftformat'\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF5EA14A2D9896070062EE15 /* Sources */ = {
